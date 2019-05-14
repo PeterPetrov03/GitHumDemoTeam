@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proekt_1</title>
+    <link rel="stylesheet" type="text/css" href="floating_images.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <section>
+        <center>
+            <ul id="menu">
+
+                <li><a href="floating_images.html">Home</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Buy</a></li>
+
+            </ul>
+        </center>
+
+
+        <div class="search-box">
+            <input class="search-txt" type="text" placeholder="Type to search">
+            <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+
+        </div>
+
+        <div class="all_images">
+            <div class="continer">
+                <img src="images/image_1.jpg" />
+                <img src="images/image_1.jpg" />
+                <img src="images/image_1.jpg" />
+                <img src="images/image_1.jpg" />
+                <img src="images/image_1.jpg" />
+
+            </div>
+            <div class="continer middle_img">
+                <img src="images/image_4.jpg" />
+                <img src="images/image_4.jpg" />
+                <img src="images/image_4.jpg" />
+                <img src="images/image_4.jpg" />
+                <img src="images/image_4.jpg" />
+            </div>
+            <div class="continer">
+                <img src="images/image_3.jpg" />
+                <img src="images/image_3.jpg" />
+                <img src="images/image_3.jpg" />
+                <img src="images/image_3.jpg" />
+                <img src="images/image_3.jpg" />
+
+            </div>
+
+        </div>
+        <button id="vacation" type="button" onclick="showDiv()"><span></span>Vacation</button>
+        <form id="box" action="floating_images.html" method="post" style="display: none;">
+            <h1>Calculator Events</h1>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <input type="submit" formaction="calculator/calculator.html" value="Login">
+        </form>
+
+        <button id="calculator" type="button" onclick="showDiv2()"><span></span>Calculator</button>
+        <form id="box_vacation" action="floating_images.html" method="post" style="display: none;">
+            <h1>Vacation</h1>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <input type="submit" formaction="Vacation/vacation.html" value="Login">
+        </form>
+    
+        <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+        function showDiv2() {
+            document.getElementById('box').style.display = "block";
+            document.getElementById('box_vacation').style.display = "none";
+        }
+        function showDiv() {
+            document.getElementById('box_vacation').style.display = "block";
+            document.getElementById('box').style.display = "none";
+        }
+
+
+    </script>
+</body>
+
+
+</html>
